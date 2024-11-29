@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="scripts/userprofile.js" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+    <span class="navbar-text fw-bold">
+      Logged in as: <span id="userEmail"></span>
+    </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chat.html">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="userprofile.html">User Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="logoutButton">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">User Profile</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img id="userAvatar" src="" alt="User Avatar" class="rounded-circle mb-3"
+                         style="width: 150px; height: 150px;">
+                    <h5 id="profileEmail" class="card-title"></h5>
+                    <p id="userPassword" class="card-text text-muted"></p>
+
+
+                    <form id="updateProfileForm">
+                        <div class="mb-3">
+                            <label for="newAvatar" class="form-label fw-bold">Change Avatar URL:</label>
+                            <input type="text" id="newAvatar" class="form-control" placeholder="Enter new avatar URL">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label fw-bold">Change Password:</label>
+                            <input type="password" id="newPassword" class="form-control"
+                                   placeholder="Enter new password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                    </form>
+
+                    <div id="successMessage" class=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

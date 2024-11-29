@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="scripts/registration.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand mx-auto fw-bold" href="login.html">Login</a>
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Register</h3>
+                    <form id="registrationForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Enter email"
+                                    required
+                            />
+                            <div id="emailError" class="text-danger mt-1"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password1" class="form-label fw-bold">Password</label>
+                            <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password1"
+                                    placeholder="Enter password"
+                                    required
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2" class="form-label fw-bold">Confirm Password</label>
+                            <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password2"
+                                    placeholder="Confirm password"
+                                    required
+                            />
+                            <div id="passwordError" class="text-danger mt-1"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                    <div id="successMessage" class="" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
